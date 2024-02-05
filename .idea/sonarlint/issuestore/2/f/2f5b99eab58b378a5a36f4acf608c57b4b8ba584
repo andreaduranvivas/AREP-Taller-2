@@ -1,0 +1,24 @@
+
+t
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(„ìë‡ıÿÿÿÿ
+o
+java:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(çÑÑÊ
+o
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(±µˆ‚
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åôûÿÿÿÿÿ
+œ
+java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ş‚ÄÔıÿÿÿÿ
+œ
+java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İÏç´øÿÿÿÿ
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ã¸€ƒ
+2
+java:S1116"Remove this empty statement.(ã¸€ƒ
+<
+java:S1168*"&Return an empty array instead of null.(¥¹ï
+S
+java:S18540"=Remove this useless assignment to local variable "firstNode".(çÑÑÊ
+D
+java:S14810".Remove this unused "firstNode" local variable.(çÑÑÊ
+B
+java:S1168‰"+Return an empty collection instead of null.(¥¹ï
