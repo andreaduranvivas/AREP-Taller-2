@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Your Favorite Movie</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/movieIcon.png" alt="Movie Icon">
+        <link rel="stylesheet" type="text/css" href="movieStyles.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <h1>Search Your Favorite Movie</h1>
+
+            <form id="movieForm">
+                <label for="movieTitle">Movie Title:</label><br>
+                <input type="text" id="movieTitle" name="movieTitle" autofocus><br><br>
+                <input type="submit" value="Search Movie">
+            </form>
+
+            <div id="movieContainer">
+                <div id="posterContainer">
+                    <img id="moviePoster" src="" alt="Movie Poster">
+                </div>
+                <div id="infoContainer">
+                    <h2 id="movieTitleDisplay"></h2>
+                    <div id="movieInfo"></div>
+                </div>
+            </div>
+
+            <script src="movieSearch.js"></script>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+#mainContainer {
+    margin: auto;
+    width: 80%;
+}
+#movieContainer {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+#posterContainer {
+    flex: 1;
+}
+#moviePoster {
+    max-width: 100%;
+    height: auto;
+}
+#infoContainer {
+    flex: 2;
+    text-align: left;
+}
+#movieTitle {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}

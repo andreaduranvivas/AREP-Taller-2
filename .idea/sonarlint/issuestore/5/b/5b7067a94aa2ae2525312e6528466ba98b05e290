@@ -1,0 +1,9 @@
+
+
+java:S1149;"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ï„Š¡şÿÿÿÿ8ü…ÆØ×1
+L	java:S106/"+Replace this use of System.out by a logger.(‰äÑŞıÿÿÿÿ8†ÆØ×1
+L	java:S1067"+Replace this use of System.out by a logger.(ä¦Éúúÿÿÿÿ8‘†ÆØ×1
+G	java:S106C"+Replace this use of System.out by a logger.(“¤üö8–†ÆØ×1
+G	java:S106H"+Replace this use of System.out by a logger.(ºçáå8—†ÆØ×1
+J
+java:S1068	"(Remove this unused "gson" private field.(çòÕÿÿÿÿÿ8™†ÆØ×1

@@ -1,0 +1,16 @@
+
+„
+java:S1488H"bImmediately return this expression instead of assigning it to the temporary variable "outputLine".(ºı…éúÿÿÿÿ8¦æ­İ×1
+i
+java:S2095m"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(®Éœ­8…è±İ×1
+f
+java:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(‰ßå8‹ï­İ×1
+G	java:S106"+Replace this use of System.err by a logger.(òó×¤8’ï­İ×1
+E
+java:S1659'"(Declare "outputLine" on a separate line.(ìáâÁ8“ï­İ×1
+G	java:S106"+Replace this use of System.out by a logger.(ËĞñä8“ï­İ×1
+G	java:S106 "+Replace this use of System.err by a logger.(Ì½æ©8”ï­İ×1
+G	java:S1061"+Replace this use of System.out by a logger.(ƒ°Ğ8—ï­İ×1
+L	java:S106r"+Replace this use of System.out by a logger.(ñ—¸½úÿÿÿÿ8Ÿè±İ×1
+W
+java:S1128"5Remove this unused import 'java.nio.charset.Charset'.(ü¶ØŸıÿÿÿÿ8Ÿï­İ×1
