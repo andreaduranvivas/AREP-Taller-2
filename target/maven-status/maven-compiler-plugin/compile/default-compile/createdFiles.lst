@@ -1,7 +1,8 @@
-com\exaple\genericsLive\Main.class
-com\exaple\genericsLive\Node.class
-com\exaple\genericsLive\Genericlie.class
-com\exaple\genericsLive\myIterator.class
-com\exaple\genericsLive\Genericlie$Main.class
-com\exaple\genericsLive\MyLinkedList.class
-com\exaple\genericsLive\HttpServer.class
+arep\clase\genericsLive\Node.class
+arep\taller\NetworkWrapper.class
+arep\clase\genericsLive\myIterator.class
+arep\taller\HttpServer.class
+arep\clase\genericsLive\GenericLive$Main.class
+arep\clase\genericsLive\GenericLive.class
+arep\clase\genericsLive\MyLinkedList.class
+arep\clase\genericsLive\HttpServer.class

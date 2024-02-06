@@ -1,13 +1,0 @@
-
-h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(æùâ8Ô€˜××1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åôûÿÿÿÿÿ8Õ€˜××1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦³üëûÿÿÿÿ8í€˜××1
->
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8ô€˜××1
-p
-java:S2272"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¤¿ğßıÿÿÿÿ8ö€˜××1
-\
-java:S1161":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ8û€˜××1
-Z
-java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ8Ğ¡××1

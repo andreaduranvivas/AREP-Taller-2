@@ -1,22 +1,0 @@
-
-J
-java:S3740"/Provide the parametrized type for this generic.(Â¡æıÿÿÿÿ
-E
-java:S3740"/Provide the parametrized type for this generic.(Í‡è£
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æş¯ûÿÿÿÿ
-o
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‘çÚ«
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åôûÿÿÿÿÿ
-K
-java:S1854"5Remove this useless assignment to local variable "x".(ÃÓÃ›
-A
-java:S1172
-"+Remove this unused method parameter "args".(Î½ºğ
-<
-java:S1481"&Remove this unused "x" local variable.(ÃÓÃ›
-@	java:S106"+Replace this use of System.out by a logger.(Óä²Ô
-@	java:S106"+Replace this use of System.out by a logger.(‹¤·Ñ
-E	java:S106%"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ
-n
-java:S3012+"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(³õ×@

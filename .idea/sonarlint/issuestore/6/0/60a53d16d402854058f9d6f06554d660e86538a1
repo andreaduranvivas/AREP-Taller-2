@@ -1,23 +1,0 @@
-
-7
-java:S1643_"Use a StringBuilder instead.(Â½­©üÿÿÿÿ
-}
-java:S1488A"bImmediately return this expression instead of assigning it to the temporary variable "outputLine".(ºı…éúÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åôûÿÿÿÿÿ
-_
-java:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(‰ßå
-g
-java:S2095Z"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Ú¥¿Ñúÿÿÿÿ
-@	java:S106"+Replace this use of System.err by a logger.(òó×¤
->
-java:S1659!"(Declare "outputLine" on a separate line.(ìáâÁ
-@	java:S106"+Replace this use of System.out by a logger.(ËĞñä
-@	java:S106"+Replace this use of System.err by a logger.(Ì½æ©
-@	java:S106+"+Replace this use of System.out by a logger.(ƒ°Ğ
-M
-java:S6126A"2Replace this String concatenation with Text block.(ºı…éúÿÿÿÿ
-M
-java:S6126U"2Replace this String concatenation with Text block.(†ãĞ†úÿÿÿÿ
-U
-java:S4719Y":Replace Charset.forName() call with StandardCharsets.UTF_8(§ˆå“øÿÿÿÿ
-E	java:S106^"+Replace this use of System.out by a logger.(ñ—¸½úÿÿÿÿ

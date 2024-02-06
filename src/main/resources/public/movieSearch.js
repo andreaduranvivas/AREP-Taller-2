@@ -7,8 +7,6 @@
  */
 function loadMovieInfo() {
     let movieTitle = document.getElementById("movieTitle").value;
-
-    // Agregar título de la película al URL usando pushState
     const url = new URL(window.location.href);
     url.searchParams.set('title', encodeURIComponent(movieTitle));
     window.history.pushState({ path: url.href }, '', url.href);
@@ -20,6 +18,12 @@ function loadMovieInfo() {
     const fullUrl = baseUrl + encodeURIComponent(movieTitle);
 
     const xhttp = new XMLHttpRequest();
+
+    /**
+     * Event handler for when the XMLHttpRequest object loads.
+     * Parses the response data and updates the movie title, poster, and info elements
+     * on the webpage based on the movie data received.
+     */
     xhttp.onload = function() {
         if (this.status === 200 && this.responseText) {
             const movieData = JSON.parse(this.responseText);
@@ -95,7 +99,12 @@ function generateInfoColumns(movieData, columnNumber) {
     return infoHtml;
 }
 
-
+/**
+ * Formats the given genres into HTML span elements with a specific class.
+ *
+ * @param {string} genres - The string of genres separated by commas
+ * @return {string} The formatted HTML string of genre items
+ */
 function formatGenres(genres) {
     const genreArray = genres.split(',').map(genre => genre.trim());
     return genreArray.map(genre => `<span class="genre-item">${genre}</span>`).join(' ');
@@ -123,3 +132,7 @@ function handleEnterPress(event) {
 }
 
 document.getElementById("movieTitle").addEventListener('keypress', handleEnterPress);
+
+module.exports = {
+  loadMovieInfo
+};

@@ -5,13 +5,24 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * The main function for the Java program, which sets up a server socket and handles incoming client requests.
+ *
+ * @throws IOException       if an I/O error occurs
+ * @throws URISyntaxException if a string could not be parsed as a URI reference
+ */
 public class HttpServer {
+
+    private final NetworkWrapper networkWrapper;
+
+    public HttpServer(NetworkWrapper networkWrapper) {
+        this.networkWrapper = networkWrapper;
+    }
     public static void main(String[] args) throws IOException, URISyntaxException {
         ServerSocket serverSocket = null;
         try {
@@ -69,7 +80,12 @@ public class HttpServer {
         serverSocket.close();
     }
 
-
+    /**
+     * Generates an HTTP response based on the requested URI.
+     *
+     * @param  requestedURI   the URI that was requested
+     * @return                the HTTP response as a byte array
+     */
     public static byte[] htttpResponse(URI requestedURI) throws IOException {
         Path file = Paths.get("target/classes/public" + requestedURI.getPath());
 
@@ -92,6 +108,11 @@ public class HttpServer {
         }
     }
 
+    /**
+     * Generates an HTTP error response with status code 404 Not Found
+     *
+     * @return          the HTTP error response as a byte array
+     */
     private static byte[] httpError() {
         String errorResponse = "HTTP/1.1 404 Not Found\r\n" +
                 "Content-Type: text/html\r\n" +
@@ -109,6 +130,23 @@ public class HttpServer {
                 "</html>";
 
         return errorResponse.getBytes(StandardCharsets.UTF_8);
+    }
+
+    /**
+     * Extracts the movie title from the given URI.
+     *
+     * @param  uri  the URI containing the movie title
+     * @return      the extracted movie title, or null if it cannot be extracted
+     */
+    public static String extractMovieTitleFromUri(String uri) {
+        String[] params = uri.split("\\?");
+        if (params.length == 2) {
+            String[] keyValue = params[1].split("=");
+            if (keyValue.length == 2 && keyValue[0].equals("title")) {
+                return keyValue[1];
+            }
+        }
+        return "";
     }
 
 }
