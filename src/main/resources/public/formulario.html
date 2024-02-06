@@ -5,28 +5,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="img/movieIcon.png" alt="Movie Icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="movieStyles.css">
     </head>
     <body>
-        <div id="mainContainer">
-            <h1>Search Your Favorite Movie</h1>
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Search Your Favorite Movie</h1>
 
-            <form id="movieForm">
-                <label for="movieTitle">Movie Title:</label><br>
-                <input type="text" id="movieTitle" name="movieTitle" autofocus><br><br>
-                <input type="submit" value="Search Movie">
+            <form id="movieForm" class="mb-4">
+                <div class="form-group">
+                    <label for="movieTitle">Movie Title:</label>
+                    <input type="text" class="form-control" id="movieTitle" name="movieTitle" autofocus>
+                </div>
+                <button type="submit" class="btn btn-primary">Search Movie</button>
             </form>
 
-            <div id="movieContainer">
+            <div id="movieContainer" class="justify-content-between align-items-center bg-light p-4 rounded" style="display: none;">
                 <div id="posterContainer">
-                    <img id="moviePoster" src="" alt="Movie Poster">
+                    <img id="moviePoster" class="img-fluid" src="" alt="Movie Poster">
                 </div>
-                <div id="infoContainer">
+                <div id="genres" class="genres"></div>
+                <div id="infoContainer" class="flex-grow-1 ml-4">
                     <h2 id="movieTitleDisplay"></h2>
                     <div id="movieInfo"></div>
                 </div>
             </div>
 
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             <script src="movieSearch.js"></script>
 
         </div>

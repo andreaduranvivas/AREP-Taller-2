@@ -1,7 +1,10 @@
-#mainContainer {
-    margin: auto;
-    width: 80%;
+body {
+    background-image: url('img/movieIcon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 #movieContainer {
     display: none;
     justify-content: space-between;
@@ -13,19 +16,48 @@
     margin: 20px auto;
     width: 80%;
 }
-#posterContainer {
-    flex: 1;
-}
-#moviePoster {
-    max-width: 100%;
-    height: auto;
-}
-#infoContainer {
-    flex: 2;
-    text-align: left;
-}
-#movieTitle {
+
+#movieTitleDisplay {
     font-size: 1.8em;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#movieInfo {
+    text-align: left;
+}
+
+.plot {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.movie-info-item {
+    margin-bottom:  10px;
+}
+
+
+.info-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#moviePoster {
+    max-width:  100%;
+    height: auto;
+    border-radius:  10px;
+}
+
+.genre-item {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+#genres {
+    margin-bottom: 10px;
 }
