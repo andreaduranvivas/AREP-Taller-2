@@ -96,8 +96,6 @@ public class HttpServer {
             outputLine = outputLine + line;
         }
 
-
-
         return outputLine;
 
     }
