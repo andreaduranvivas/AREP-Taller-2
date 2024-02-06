@@ -44,7 +44,7 @@ function loadMovieInfo() {
                             <div id="genres" class="genres">${formatGenres(movieData.Genre)}</div>
                         `;
             } else {
-                moviePosterElement.src = "http://bra3.org/not_found.png";
+                moviePosterElement.src = 'img/notFound.png';
                 movieInfoElement.innerHTML = `
                              <h3>${movieData.Title}</h3>
                              <div class="row">
