@@ -154,3 +154,5 @@ Version 1.0.0
 MIT License 
 
 ## Acknowledgments
+
+Class with Daniel Benavides
